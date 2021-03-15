@@ -1,6 +1,6 @@
 #include "color.h"
 #include <gtest/gtest.h>
-TEST(empty_const,colorr) {
+TEST(para,colorr) {
 colorr c1(10,20,30);
 
     EXPECT_EQ(1,c1.display());
@@ -8,6 +8,16 @@ colorr c1(10,20,30);
 
 
 }
+TEST(strings,colorr) {
+colorr c2("FF0100");
+
+    EXPECT_EQ(255,c2.m_r);
+    EXPECT_EQ(16,c2.m_g);
+    EXPECT_EQ(0,c2.m_b);
+
+
+}
+
 
 
 
