@@ -3,7 +3,7 @@
 TEST(empty_const,color) {
     color c1(10,20,30);
     EXPECT_EQ(1,c1.display());
-    //EXPECT_EQ(10,c1.m_r());
+    //EXPECT_EQ(10,c1.m_r());  //this will throw a error which screenshot is attatched 
 
 
 }
