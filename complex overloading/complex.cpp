@@ -58,7 +58,11 @@ void complex::print()const
 
 
 
-
+std::ostream& operator<<(std::ostream &rout,const complex &ref)
+{
+	rout<<ref.m_real<<".i"<<ref.imag;
+	return rout;
+}
 
 
 
