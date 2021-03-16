@@ -74,4 +74,14 @@ void mytime::display()const
 {
 cout<<"hh::mm::ss :"<<m_hours<<"::"<<m_mins<<"::"<<m_secs<<endl;
 }
+std::ostream& operator<<(std::ostream &rout,const mytime &ref)
+{
+	rout<<ref.m_hours<<":"<<ref.m_mins;<<":"ref.m_secs;
+	return rout;
+}
+std::istream& operator<<(std::istream &rin,const mytime &ref)
+{
+	rin>>ref.m_hours>>ref.m_mins>>m_secs;
+	return rin;
+}
 
