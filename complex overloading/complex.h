@@ -13,4 +13,5 @@ bool operator==(const complex &obj);
 complex operator++(int i);
 void print()const;
 complex& operator++();
+friend std::ostream &operaor<<(std::ostream &rout,const complex &ref);
 };
