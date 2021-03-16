@@ -15,4 +15,6 @@ bool operator<(const distance1 &obj);
 bool operator>(const distance1 &obj);
 void display()const;
 distance1& operator++();
+std::ostream& operator<<(std::ostream &rout,const distance &ref);
+std::istream& operator>>(std::istream &rin,const distance &ref);
 };
