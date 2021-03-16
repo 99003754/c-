@@ -16,5 +16,7 @@ mytime& operator+=(const mytime &obj);
 bool operator==(const mytime &obj);
 void display()const;
 mytime& operator++();
+std::ostream& operator<<(std::ostream &rout,const distance1 &ref);
+std::istream& operator>>(std::oitream &rin,const distance1 &ref);
 
 };
