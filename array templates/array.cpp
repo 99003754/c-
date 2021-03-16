@@ -4,13 +4,15 @@ myarray<T>::myarray():m_len(0)
 {}
 template<typename T>
 myarray<T>::myarray(int len):m_len(len)
-{}
+{
+m_arr=new T[len];
+}
 template<typename T>
 myarray<T>::~myarray()
 {
-m_len=0;
-m_arr=0;
 s=-1;
+delete[] m_arr;
+cout<<"DESTROYED"<<endl;
 }
 template<typename T>
 void myarray<T>::append(T val)
@@ -109,22 +111,6 @@ k=a.min();
 cout<<"min is "<<k<<endl;
 k=a.max();
 cout<<"max is "<<k<<endl;
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
