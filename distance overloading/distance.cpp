@@ -79,6 +79,21 @@ void distance1::display()const
 {
 cout<<"feets and inches "<<m_feets<<" "<<m_inches<<endl;
 }
+std::ostream& operator<<(std::ostream &rout,const distance1 &ref)
+{
+	rout<<ref.m_feets<<"."<<ref.m_inches;
+	return rout;
+}
+std::ostream& operator<<(std::ostream &rout,const distance1 &ref)
+{
+	rout<<ref.m_feets<<"."<<ref.m_inches;
+	return rout;
+}
+std::istream& operator<<(std::istream &rin,const distance1 &ref)
+{
+	rin>>ref.m_feets>>ref.m_inches
+	return rin;
+}
 
 
 
