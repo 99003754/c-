@@ -4,14 +4,25 @@ Account::Account():b_accno(0),b_accname (0),b_balance(0)
 {
 }
 
-Account::Account(std::string no,std::string name,double balance):b_accno(no),b_accname (name),b_balance (balance)
+/**
+ * @brief Construct a new Account:: Account object
+ * 
+ * @param no 
+ * @param name 
+ * @param balance 
+ */
+Account::Account(const std::string no,std::string name,double balance):b_accno(no),b_accname (name),b_balance (balance)
 {
 }
 
 Account::Account(std::string s11,std::string s22):b_accno(s11),b_accname (s22)
     {
     }
-
+/**
+ * @brief Construct a new Account:: Account object
+ * 
+ * @param a1 
+ */
 Account::Account(const Account &a1)
     {
         b_accno = a1.b_accno;
